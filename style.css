@@ -96,10 +96,19 @@
     width: 100%;
     height: 40%;
     border:1px solid #dad3d3;
+    box-shadow: 0 0.2rem 0.2rem rgb(0,0,0,0.2);
 }
 .long-btn .in-div{
     display: flex;
-     margin-left: 45px;
+    margin-left: 45px;
+}
+.long-btn .in-div .hd::before{
+    content:"|";
+    margin:0 10px
+}
+.long-btn .in-div li::before{
+    content:"|";
+    margin: 0 10px;
 }
 .center .long-btn .search{
     background-color:rgb(255, 0, 0);
@@ -128,7 +137,7 @@
     font-size: 15px;
 } 
 .center .long-btn .in-div ul li{
-    border-left: 1px solid #1d1a1a;
+    /* border-left: 1px solid #1d1a1a; */
     border-spacing:100px;
 }
 .long-btn .hd{
@@ -291,9 +300,13 @@
 
             /* section-footer */
 
+
+.footer{
+ }
 .footer .footer-1{
-    background: ;
-    margin:  82px;
+    background:#f7f7f7 ;
+
+    margin:  50px;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -309,6 +322,7 @@
 .footer .footer-1 .ft-1 ul{
     display: flex;
     gap: 25px;
+   
 }
 .footer .footer-1 .ft-1 ul li{
     list-style: none;
@@ -316,7 +330,7 @@
 .footer .foots .ft-1-1{
     display: flex;
     justify-content: space-around;
-    margin-left: -90px;
+    margin-left: -130px;
 }
 .footer .foots{
     margin-right: 90px;
@@ -324,7 +338,7 @@
     flex-direction: column;
     gap: 27px;
     /* background-color: #bbeec8; */
-    padding: 50px;
+    padding:20px 50px 40px;
     align-items: left;
     text-align: left; 
     justify-content: left;
@@ -332,6 +346,7 @@
 }
 .footer .foots ul li{
     list-style: none;
+    cursor: pointer;
 }
 .footer .foots .ul-1 .li-1{
     font-weight: bold;
@@ -342,21 +357,124 @@
 .footer .foots .ft-1-2{
     display: flex;
     justify-content: space-around;
-    margin-left: -90px;
+    margin-left: -130px;
 }
 .footer .foots .ft-1-3{
     display: flex;
     justify-content: space-around;
-    margin-left: -95px;
+    margin-left: -135px;
+}
+.footer .foots .ft-1-3 .ul-1 .li-show{
+    font-weight: bold;
+}
+.footer .foots .ft-1-3 .ul-1 .li-show:hover{
+    text-decoration: underline;
 }
 .footer .foots .ft-1-3 .ul-1 span{
     position:relative;
     left: 83px;
-    top: -16px;
+    top: -18px;
+    cursor: pointer;
+}
+.footer .foots .ft-1-3 .ul-1 span i{
+    font-size:14px;
 }
 .footer .footer-2{
-    margin: 82px;
-    padding: 10px;
+    background:#f7f7f7 ;
+    margin-left: 40px;
+    margin-top: -80px;
+    padding:30px;
     display: flex;
-
+    /* justify-content:space-around; */
+    gap: 360px;
+    /* margin-left: 500px; */
 }
+.footer .footer-2 ul li{
+    list-style: none;
+    line-height: 24px;
+}
+.footer .footer-2 .footer-2-1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer .footer-2 .footer-2-1 span{
+    font-weight: bold;
+}
+.footer-2 ul li{
+    cursor: pointer;
+}
+.footer-2 ul li:hover{
+    text-decoration: underline;
+}
+.footer .footer-2 {
+    border-bottom: 1px solid #ece6e6;
+}
+ .last{
+    margin: 30px 60px 10px;
+    display: flex;
+    justify-content: space-between;
+ }
+ .last .div-1{
+    display: flex;
+    gap: 10px;
+ }
+ .last .policies ul{
+    display: flex;
+    gap: 10px;
+ }
+ .last .policies ul li{
+    list-style: none;
+    align-items: center;
+    /* text-align: center; */
+    /* justify-content: center; */
+ }
+ .last .policies ul .sep{
+    cursor:pointer;
+ }
+ .last .policies ul .sep:hover{
+    text-decoration: underline;
+ }
+ .last .div-2{
+    width: 16%;
+    background:#f7f7f7 ;
+
+    /* background: #9e8787; */
+    display: flex;
+    gap: 30px;
+    cursor: pointer;
+ }
+ .last .div-2 .eng{
+    font-weight: bold;
+    
+ }
+ .last .div-2 .eng p:hover{
+    text-decoration: underline;
+ }
+ .div-2 .eng i{
+    /* background: blue; */
+    font-size: ;
+    position: relative;
+    left: -25px;
+    top: -16px;
+    /* color: #e02222; */
+ }
+ .div-2 .inr p{
+    font-weight: bold;
+ }
+ .div-2 .inr p:hover{
+    text-decoration: underline;
+ }
+ .div-2 .inr i{
+    position: relative;
+    left: -15px;
+    top: -16px;
+ }
+ .div-2 .icons{
+    /* width: 50px; */
+    display: flex;
+    gap: 10px;
+ }
+ .div-2 .icons i{
+    font-size: 20px;
+ }
